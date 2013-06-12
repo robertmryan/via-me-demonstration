@@ -30,16 +30,19 @@
     if (viaMeManager.isAuthorized)
     {
         self.uploadImageButton.enabled = YES;
+        self.uploadImageButton.alpha = 1.0;
     }
     else
     {
         self.uploadImageButton.enabled = NO;
+        self.uploadImageButton.alpha = 0.0;
         
         [viaMeManager authorize:^(BOOL success, NSError *error) {
             if (success)
             {
                 NSLog(@"authorized");
                 self.uploadImageButton.enabled = YES;
+                self.uploadImageButton.alpha = 1.0;
             }
             else
             {
