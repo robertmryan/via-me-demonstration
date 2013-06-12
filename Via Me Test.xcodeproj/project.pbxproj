@@ -23,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		837924E91768715E00BAEA26 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		837924EA1768715E00BAEA26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		83FC3ABF17683EDE0045ADE2 /* Via Me Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Via Me Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FC3AC217683EDE0045ADE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83FC3AC417683EDE0045ADE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +64,8 @@
 		83FC3AB617683EDE0045ADE2 = {
 			isa = PBXGroup;
 			children = (
+				837924EA1768715E00BAEA26 /* README.md */,
+				837924E91768715E00BAEA26 /* LICENSE */,
 				83FC3AC817683EDE0045ADE2 /* Via Me Test */,
 				83FC3AC117683EDE0045ADE2 /* Frameworks */,
 				83FC3AC017683EDE0045ADE2 /* Products */,
@@ -310,6 +314,7 @@
 				83FC3AE417683EDF0045ADE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
