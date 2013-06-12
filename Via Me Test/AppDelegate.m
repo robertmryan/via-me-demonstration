@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViaMeManager.h"
 
 @implementation AppDelegate
 
@@ -42,5 +43,38 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - Handle custom URL scheme
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    ViaMeManager *viaMeManager = [ViaMeManager sharedManager];
+
+    if ([[url host] isEqualToString:viaMeManager.host])
+    {
+        [viaMeManager handleViaMeResponse:[self parseQueryString:[url query]]];
+
+        return YES;
+    }
+
+    return NO;
+}
+
+- (NSDictionary *)parseQueryString:(NSString *)query
+{
+    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    NSArray *queryParameters = [query componentsSeparatedByString:@"&"];
+
+    for (NSString *queryParameter in queryParameters) {
+        NSArray *elements = [queryParameter componentsSeparatedByString:@"="];
+        NSString *key     = [elements[0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *value   = [elements[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        value             = [[value componentsSeparatedByString:@"+"] componentsJoinedByString:@" "];
+
+        [dictionary setObject:value forKey:key];
+    }
+    return dictionary;
+}
+
 
 @end
