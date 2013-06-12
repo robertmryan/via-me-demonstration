@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839E6B30176872D6007D30B9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E6B2F176872D6007D30B9 /* AssetsLibrary.framework */; };
+		839E6B3217687800007D30B9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E6B3117687800007D30B9 /* MobileCoreServices.framework */; };
 		83FC3AC317683EDE0045ADE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FC3AC217683EDE0045ADE2 /* UIKit.framework */; };
 		83FC3AC517683EDE0045ADE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FC3AC417683EDE0045ADE2 /* Foundation.framework */; };
 		83FC3AC717683EDE0045ADE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FC3AC617683EDE0045ADE2 /* CoreGraphics.framework */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		837924E91768715E00BAEA26 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		837924EA1768715E00BAEA26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		839E6B2F176872D6007D30B9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		839E6B3117687800007D30B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		83FC3ABF17683EDE0045ADE2 /* Via Me Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Via Me Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FC3AC217683EDE0045ADE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83FC3AC417683EDE0045ADE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839E6B3217687800007D30B9 /* MobileCoreServices.framework in Frameworks */,
+				839E6B30176872D6007D30B9 /* AssetsLibrary.framework in Frameworks */,
 				83FC3AC317683EDE0045ADE2 /* UIKit.framework in Frameworks */,
 				83FC3AC517683EDE0045ADE2 /* Foundation.framework in Frameworks */,
 				83FC3AC717683EDE0045ADE2 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +89,8 @@
 		83FC3AC117683EDE0045ADE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				839E6B3117687800007D30B9 /* MobileCoreServices.framework */,
+				839E6B2F176872D6007D30B9 /* AssetsLibrary.framework */,
 				83FC3AC217683EDE0045ADE2 /* UIKit.framework */,
 				83FC3AC417683EDE0045ADE2 /* Foundation.framework */,
 				83FC3AC617683EDE0045ADE2 /* CoreGraphics.framework */,

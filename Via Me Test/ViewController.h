@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *uploadImageButton;
+
+- (IBAction)didTouchUpInsideUploadImageButton:(id)sender;
+
 @end
