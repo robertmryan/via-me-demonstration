@@ -18,6 +18,8 @@
 		83FC3AD917683EDE0045ADE2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FC3AD817683EDE0045ADE2 /* Default-568h@2x.png */; };
 		83FC3ADC17683EDE0045ADE2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FC3ADA17683EDE0045ADE2 /* MainStoryboard.storyboard */; };
 		83FC3ADF17683EDF0045ADE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FC3ADE17683EDE0045ADE2 /* ViewController.m */; };
+		83FC3AE7176848D20045ADE2 /* ViaMeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FC3AE6176848D20045ADE2 /* ViaMeManager.m */; };
+		83FC3AEA176855020045ADE2 /* NSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FC3AE9176855010045ADE2 /* NSString+UrlEncode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		83FC3ADB17683EDE0045ADE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		83FC3ADD17683EDE0045ADE2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		83FC3ADE17683EDE0045ADE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		83FC3AE5176848D20045ADE2 /* ViaMeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViaMeManager.h; sourceTree = "<group>"; };
+		83FC3AE6176848D20045ADE2 /* ViaMeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViaMeManager.m; sourceTree = "<group>"; };
+		83FC3AE8176855010045ADE2 /* NSString+UrlEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlEncode.h"; sourceTree = "<group>"; };
+		83FC3AE9176855010045ADE2 /* NSString+UrlEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlEncode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 				83FC3ADA17683EDE0045ADE2 /* MainStoryboard.storyboard */,
 				83FC3ADD17683EDE0045ADE2 /* ViewController.h */,
 				83FC3ADE17683EDE0045ADE2 /* ViewController.m */,
+				83FC3AE5176848D20045ADE2 /* ViaMeManager.h */,
+				83FC3AE6176848D20045ADE2 /* ViaMeManager.m */,
+				83FC3AE8176855010045ADE2 /* NSString+UrlEncode.h */,
+				83FC3AE9176855010045ADE2 /* NSString+UrlEncode.m */,
 				83FC3AC917683EDE0045ADE2 /* Supporting Files */,
 			);
 			path = "Via Me Test";
@@ -176,6 +186,8 @@
 				83FC3ACF17683EDE0045ADE2 /* main.m in Sources */,
 				83FC3AD317683EDE0045ADE2 /* AppDelegate.m in Sources */,
 				83FC3ADF17683EDF0045ADE2 /* ViewController.m in Sources */,
+				83FC3AE7176848D20045ADE2 /* ViaMeManager.m in Sources */,
+				83FC3AEA176855020045ADE2 /* NSString+UrlEncode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
