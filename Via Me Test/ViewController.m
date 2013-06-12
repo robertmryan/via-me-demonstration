@@ -7,17 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "ViaMeManager.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    ViaMeManager *viaMeManager = [ViaMeManager sharedManager];
+    if (!viaMeManager.isAuthorized)
+    {
+        [viaMeManager authorize:^(BOOL success, NSError *error) {
+            if (success)
+                NSLog(@"authorized");
+            else
+                NSLog(@"not authorized");
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +33,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
