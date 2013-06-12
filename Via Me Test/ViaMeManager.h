@@ -9,31 +9,35 @@
 #import <Foundation/Foundation.h>
 
 
-typedef void (^AuthorizationCompletionBlock)(BOOL success, NSError *error);
+typedef void (^ViaMeCompletionBlock)(BOOL success, NSError *error);
 
 
 @interface ViaMeManager : NSObject
 
-/// ----------------
+/// ----------------------------------------------------------------------
 /// @name Properties
-/// ----------------
+/// ----------------------------------------------------------------------
 
 @property (nonatomic, strong, readonly) NSString *host;
 @property (nonatomic, strong, readonly) NSString *code;
 @property (nonatomic, strong, readonly) NSString *accessToken;
 @property (nonatomic, readonly, getter = isAuthorized) BOOL authorized;
 
-/// ----------------------
+/// ----------------------------------------------------------------------
 /// @name Basic operations
-/// ----------------------
+/// ----------------------------------------------------------------------
 
 /// Retrieve access to singleton
 
 + (id)sharedManager;
 
+/// ----------------------------------------------------------------------
+/// @name Authorization
+/// ----------------------------------------------------------------------
+
 /// Authorize App
 
-- (void)authorize:(AuthorizationCompletionBlock)block;
+- (void)authorize:(ViaMeCompletionBlock)block;
 
 /** Handle the response from Via Me
  
@@ -48,5 +52,11 @@ typedef void (^AuthorizationCompletionBlock)(BOOL success, NSError *error);
  */
 
 - (NSString *)host;
+
+/// ----------------------------------------------------------------------
+/// @name Uploading
+/// ----------------------------------------------------------------------
+
+- (void)uploadData:(NSData *)data filename:(NSString *)filename text:(NSString *)text completion:(ViaMeCompletionBlock)completion;
 
 @end
